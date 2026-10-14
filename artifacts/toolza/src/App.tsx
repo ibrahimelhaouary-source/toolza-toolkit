@@ -7,7 +7,7 @@ import NotFound from '@/pages/not-found';
 import { Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
 import Home from './pages/Home';
 import { AboutPage, ContactPage, PrivacyPage, TermsPage } from './pages/InfoPages';
-import { ImageCompressorPage, PdfMergerPage, WordCounterPage, CaseConverterPage, CvBuilderPage } from './pages/ToolPages';
+import { ImageCompressorPage, PdfMergerPage, WordCounterPage, CaseConverterPage } from './pages/Tools';
 import { Layout } from './components/Site';
 
 const queryClient = new QueryClient();
@@ -27,7 +27,6 @@ function Router() {
           <Route path="/tools/image-compressor" component={ImageCompressorPage} />
           <Route path="/tools/word-counter" component={WordCounterPage} />
           <Route path="/tools/case-converter" component={CaseConverterPage} />
-          <Route path="/tools/cv-builder" component={CvBuilderPage} />
           <Route path="/about" component={AboutPage} />
           <Route path="/privacy" component={PrivacyPage} />
           <Route path="/terms" component={TermsPage} />
@@ -43,7 +42,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, '')}>
+        <WouterRouter>
           <Router />
         </WouterRouter>
         <Toaster />
