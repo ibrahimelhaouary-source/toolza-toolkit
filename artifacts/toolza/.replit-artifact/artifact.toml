@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Toolza"
+description = "A free everyday online toolkit with browser-based PDF, image, text, and CV tools."
+version = "1.0.0"
+id = "artifacts/toolza"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24866
+
+[services.development]
+run = "pnpm --filter @workspace/toolza run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/toolza", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/toolza/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24866"
+BASE_PATH = "/"
