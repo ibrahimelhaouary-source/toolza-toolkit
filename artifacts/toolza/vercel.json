@@ -1,4 +1,1 @@
-{
-  "buildCommand": "cd artifacts/toolza && npm run build",
-  "outputDirectory": "artifacts/toolza/dist"
-}
+{}
