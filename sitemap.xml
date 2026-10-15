@@ -1,26 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- الصفحة الرئيسية -->
   <url>
     <loc>https://toolza-toolkit.vercel.app/</loc>
     <lastmod>2026-10-15</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- أداة دمج ملفات PDF -->
   <url>
     <loc>https://toolza-toolkit.vercel.app/tools/pdf-merger</loc>
     <lastmod>2026-10-15</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- أداة ضغط الصور -->
   <url>
     <loc>https://toolza-toolkit.vercel.app/tools/image-compressor</loc>
     <lastmod>2026-10-15</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolza-toolkit.vercel.app/tools/word-counter</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolza-toolkit.vercel.app/tools/case-converter</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolza-toolkit.vercel.app/tools/cv-builder</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolza-toolkit.vercel.app/about</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://toolza-toolkit.vercel.app/privacy</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://toolza-toolkit.vercel.app/terms</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://toolza-toolkit.vercel.app/contact</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.5</priority>
   </url>
 </urlset>
